@@ -1,0 +1,260 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8fc;
+    color: #493044;
+    line-height: 1.7;
+}
+
+.hero {
+    min-height: 440px;
+    background: linear-gradient(135deg, #ffd6e9, #e7d7ff);
+    padding: 20px 8% 70px;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a12f78;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #713e7f;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.hero-content {
+    max-width: 720px;
+    margin: 75px auto 0;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #b33d85;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #57345e;
+}
+
+.hero h1 span {
+    color: #c02c83;
+}
+
+.hero-content > p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #c02c83;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #8d2168;
+}
+
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #7c347f;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about > p:last-child {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.members-section {
+    background: #fff0f7;
+}
+
+.section-description {
+    margin-bottom: 35px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.member-card {
+    display: block;
+    background: white;
+    padding: 25px 18px;
+    border: 1px solid #f5cce2;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #493044;
+}
+
+.member-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffc5df;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.member-card h3 {
+    color: #9c347e;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.member-card p {
+    font-size: 14px;
+    color: #85617e;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #58375f;
+    color: white;
+}
+
+.footer-small {
+    font-size: 12px;
+}
+
+/* Individual member profile pages */
+
+.profile-page {
+    min-height: 100vh;
+}
+
+.profile-header {
+    padding: 20px 8%;
+    background: linear-gradient(135deg, #ffd6e9, #e7d7ff);
+}
+
+.profile {
+    max-width: 750px;
+    width: 90%;
+    margin: 45px auto;
+    padding: 35px 25px;
+    text-align: center;
+    background: white;
+    border: 1px solid #f5cce2;
+    border-radius: 25px;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #ffc5df;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.profile h1 {
+    color: #a12f78;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    margin-bottom: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    border-radius: 25px;
+    background: #c02c83;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: #8d2168;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 20px 6% 55px;
+    }
+
+    .hero-content {
+        margin-top: 55px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    .member-grid {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+        gap: 15px;
+    }
+
+    .member-photo {
+        width: 115px;
+        height: 115px;
+    }
+
+    .member-card {
+        padding: 18px 10px;
+    }
+
+    .member-card h3 {
+        font-size: 16px;
+    }
+
+    .profile-photo {
+        width: 190px;
+        height: 230px;
+    }
+}
